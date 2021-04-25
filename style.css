@@ -560,6 +560,18 @@ footer .credit{
     }
     footer .aboutUs div{
         width: 98%;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        height: 250px;
+        border-bottom: 1px solid #a6a6a6;
+    }
+    footer .aboutUs div:last-child{
+        border: none;
+    }
+    footer .aboutUs .blog .post{
+        text-align: center;
+        width: 100%;
     }
     footer .aboutUs div h1{
         text-align: center;
