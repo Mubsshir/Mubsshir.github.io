@@ -235,16 +235,15 @@ header .heading{
 
 .services {
     width: 99%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
     margin:  0 auto;
     margin-top: 10px;
+    clear: both;
 }
 .services div{
+    float: left;
     width: 25%;
     height: 250px;
-    margin: 0;
+    margin: 2px 0;
     padding:10px 0;
     text-align: center;
 }
