@@ -429,6 +429,10 @@ footer .aboutUs .newsletter form input{
     background-color: #1f1f1f;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+footer .aboutUs .newsletter form input:focus{
+    outline: none;
+    color: #a6a6a6;
+}
 footer .aboutUs .newsletter form  button{
     height: 35px;
     width: 90px;
@@ -563,7 +567,7 @@ footer .credit{
         text-align: center;
         margin: 0;
         padding: 0;
-        height: 250px;
+        height: 280px;
         border-bottom: 1px solid #a6a6a6;
     }
     footer .aboutUs div:last-child{
