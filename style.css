@@ -193,14 +193,14 @@ header .heading{
     background-color: rgb(117, 79, 29);
     margin:0 auto;
     position: relative;
-    top: 6px;
+    top: 1.5%;
     overflow: hidden;
 }
 .slider-section .image-frame .slider-container .image-container{
     width: 300%;
     height: 100%;
     position: relative;
-    transition: left  1s;
+    transition: left  3s;
 }
 .slider-section .image-frame .slider-container .image-container .slider-image{
     float: left;
@@ -234,18 +234,23 @@ header .heading{
 }
 
 .services {
-    width: 99%;
+    display: flex;
+    flex-flow: row wrap;
+    width: 95%;
     margin:  0 auto;
     margin-top: 10px;
+    margin-bottom: 5px;
     clear: both;
+    border-bottom: solid rgb(202, 197, 197) 1px;
+    justify-content: space-between;
 }
 .services div{
-    float: left;
-    width: 25%;
+    width: 24%;
     height: 250px;
     margin: 2px 0;
     padding:10px 0;
     text-align: center;
+    margin-bottom: 50px;
 }
 .services div .fa-users{
     font-size: 50px;
@@ -288,7 +293,161 @@ header .heading{
 .services div ::first-line{
     text-align: center;
 }
-
+.project{
+    display: flex;
+    flex-flow: row wrap;
+    width: 95%;
+    margin:  0 auto;
+    margin-top: 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+.project .card .picture img{
+    height: 97%;
+    width: 98%;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+.project  .card{
+    width: 24%;
+    height: 452px;
+}
+.project .card .picture{
+    border: 1px gray solid;
+    width: 95%;
+    height: 35%;
+    margin-bottom: 20px;
+}
+.project .card h1{
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 22px;
+    color: #636363;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.project .card p{
+    line-height: 1.6;
+    font-weight:400;
+    color: #979797;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.project .card a{
+    text-decoration: none;
+    color: #82b302;
+    margin-top: 10px;
+    margin-right: 15px;
+    font-weight: 400;
+    clear: both;
+    float: right;
+}
+.project .card .fa-angle-double-right{
+    font-weight: 550;
+    margin-left: 2px;
+}
+footer{
+    background-color: #3b3b3b;
+}
+footer .aboutUs{
+    display: flex;
+    flex-flow: wrap row;
+    width: 95%;
+    margin:  0 auto;
+    justify-content: space-between;
+}
+footer .aboutUs div{
+    width: 24%;
+    height: 300px;
+    color: white;
+}
+footer .aboutUs div h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 25px 0;
+    color: #616161;
+    text-align: left;
+}
+footer .contact p{
+    font-size: 17px;
+    color: #949494;
+    padding-bottom: 25px;
+    line-height: 1.6;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+footer .more-links ul{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    color: #949494;
+}
+footer .more-links ul li{
+    padding-bottom: 10px;
+    font-size: 17px;
+    padding-top: 3px;
+    width: 100%;
+    border-bottom: 1px rgb(75, 73, 73) solid;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+footer .aboutUs .blog{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+footer .aboutUs .blog h2{
+    font-size: 18px;
+    color: #9b9b9b;
+    margin-bottom: 5px;
+}
+footer .aboutUs .blog .bloger{
+    font-size: 15px;
+    color: #9b9b9b;
+    margin-bottom: 8px;
+}
+footer .aboutUs .blog .post{
+    font-size: 17px;
+    color: #939393;
+    width: 300px;
+    line-height: 1.4;
+}
+footer .aboutUs .blog a{
+    float: right;
+    text-decoration: none;
+    color: #90b414;
+    margin-right:30px;
+    margin-top: 20px;
+}
+footer .aboutUs .newsletter form input{
+    border: none;
+    height: 35px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 280px;
+    font-size: 17px;
+    background-color: #1f1f1f;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+footer .aboutUs .newsletter form  button{
+    height: 35px;
+    width: 90px;
+    background-color: #1f1f1f;
+    border: none;
+    border-radius: 5px;
+    color: #90b414;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+footer .credit{
+    display: flex;
+    background-color: #2e2e2e;
+    justify-content: space-between;
+    padding: 15px 30px;
+    align-items: center;
+    color: #767676;
+}
 
 @media screen and (max-width:838px){
     header{
@@ -360,6 +519,23 @@ header .heading{
         width: 48%;
         margin: 2px;
     }
+    .project .card{
+        width: 48%;
+    }
+    footer .aboutUs div{
+        width: 48%;
+    }
+   
+}
+@media only screen and (max-width:650px) {
+    .slider-section{
+        height: 200px;
+    }
+    .services div{
+        width: 48%;
+        margin-bottom: 50px;
+    }
+
 }
 
 @media only screen and (max-width:450px) {
@@ -369,5 +545,37 @@ header .heading{
     .services div{
         width: 98%;
         margin: 2px;
+    }
+    .project .card{
+        width: 98%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .project .card h1{
+        text-align: center;
+    }
+    .project .card {
+        float:none;
+        text-align: center;
+    }
+    footer .aboutUs div{
+        width: 98%;
+    }
+    footer .aboutUs div h1{
+        text-align: center;
+    }
+    footer .aboutUs div ul{
+        text-align: center;
+    }
+    footer .aboutUs div ul li{
+        width: 250px;
+        margin: 0 auto
+    }
+    footer .credit{
+        flex-flow: column wrap;
+        text-align: center;
+        font-size: 12px;
+        padding: 10px;
+
     }
 }
