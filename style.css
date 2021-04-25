@@ -179,6 +179,7 @@ header .heading{
     height: 580px;
     background-color:#ece7e7;
     padding: 10px;
+    clear: both;
 }
 .slider-section .image-frame{
     width: 95%;
