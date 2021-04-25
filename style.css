@@ -178,14 +178,14 @@ header .heading{
     width: 100% !important;
     height: 580px;
     background-color:#ece7e7;
-    padding: 10px;
     clear: both;
+    padding-top: 30px;
 }
 .slider-section .image-frame{
     width: 95%;
     height: 85%;
-    background-color: #fff;
-    margin: 30px auto 0 auto;    
+    background-color: #fff;  
+    margin: 0 auto;
 }
 .slider-section .image-frame .slider-container{
     height: 97%;
@@ -210,11 +210,11 @@ header .heading{
     width: 33.333%;
 }
 .dot-container {
-    height: 10% !important;
+    height: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -5px;
+
 }
 .dot-container .slider-button{
     height: 15px;
