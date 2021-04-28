@@ -127,8 +127,9 @@ header .heading{
     display: flex;
     flex-flow: wrap;
 }
-.navBar .nav-links ul li{
+.navBar .nav-links  ul li{
     margin: 0 10px;
+    padding: 15px 0;
 }
 .navBar .nav-links ul li a{
     color: #ebf8e4;
@@ -136,6 +137,34 @@ header .heading{
 }
 .navBar .nav-links ul li a:hover, .navBar .nav-links .active{
     color: black;
+}
+.navBar .nav-links ul li:hover .sub-menu-1{
+    display: block;
+}
+.navBar .nav-links  .sub-menu-1 {
+    display: none;
+    position: absolute;
+    background-color: #353535;
+    opacity: .8;
+    color: rgb(27, 15, 59);
+    margin-top: 15px;
+    z-index: 2;
+    box-shadow:0 5px 10px 2px black;
+}
+.navBar .nav-links  .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px 0;
+    border-bottom: 1px dotted black;
+}
+.navBar .nav-links .sub-menu-1 ul li a:hover{
+    color: greenyellow;
+}
+.navBar .nav-links  .sub-menu-1 ul li:last-child{
+    border: none;
+}
+.navBar .nav-links  .sub-menu-1 ul{
+    display: block;
+   
 }
 .navBar .search-container{
     background-color: white;
@@ -507,6 +536,9 @@ footer .credit{
     .navBar .nav-links ul li{
         width: 100%;
         padding: 10px 0;
+    }
+    .navBar .nav-links  .sub-menu-1{
+        position: relative;
     }
     .navBar .search-container{
 
